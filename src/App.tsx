@@ -1,12 +1,9 @@
-import { Button } from "@/components/ui/button";
-import toast from "react-hot-toast";
-import { ToasterProvider } from './components/toaster-provider';
+import { Navbar } from "@/features/navbar";
 
 function App() {
   return (
     <div>
-      <ToasterProvider/>
-      <Button variant={'destructive'} onClick={() => toast.error("hello")}>Hello Click Me</Button>
+      <Navbar/>
     </div>
   )
 }
