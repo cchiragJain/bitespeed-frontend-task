@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
-  const handleSaveChanges = (e: React.MouseEvent) => {
-    console.log("clicked save changes button header component", e);
+  const handleSaveChanges = () => {
+    console.log("clicked save changes button header component");
   };
 
   return (
