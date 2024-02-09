@@ -1,16 +1,18 @@
 import { File } from "./nodes-panel-icons";
-import { NodeTypeProps, NodeTypes } from "./types";
+import { NodeProps, NodeTypes } from "./types";
 
 const NodePanelIcons = {
   [NodeTypes.Text]: <File />,
 };
 
-export const Node = ({ label, type }: NodeTypeProps) => {
+export const Node = ({ label, type, id }: NodeProps) => {
   return (
-    <div>
+    <div
+      id={id}
+      className="p-6 text-center rounded-sm border border-red-300 flex flex-col items-center gap-4"
+    >
       <div>{NodePanelIcons[type]}</div>
-      <div>{label}</div>
-      <div>{type}</div>
+      <p>{label}</p>
     </div>
   );
 };

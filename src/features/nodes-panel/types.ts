@@ -2,7 +2,8 @@ export enum NodeTypes {
   Text = "text",
 }
 
-export interface NodeTypeProps {
+export interface NodeProps {
   label: string;
   type: NodeTypes;
+  id: string;
 }
